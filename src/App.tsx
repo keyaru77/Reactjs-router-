@@ -10,12 +10,10 @@ function App() {
   
   return (
     <BrowserRouter>
-      <Header/>
       <Route path="/" exact component={ Home } />
       <Route path="/anime/:slug" component={ Anime }/>
       <Route path="/animes/:title" component={ Animes }/>
       <Route path="/404" component={ PageNotFound }/>
-      <Footer/>
     </BrowserRouter>
   );
 }
